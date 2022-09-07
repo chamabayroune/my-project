@@ -8,6 +8,6 @@ int main()
      printf("enter year of birth:");
     scanf("%d",&year);
     age =2022- year;
-    printf("you have %d years old",age);
+    printf("your year of birth is %f and you have %d years old",age);
     return 0;
 }
