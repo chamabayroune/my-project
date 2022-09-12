@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-float Y;
-float annee (float N){
+int Y;
+int annee (int N){
 
     if(N==366){
-        printf("%.2f est une annee bissextile",N);
+        printf("%d est une annee bissextile",N);
     }
     else if(N==365){
-        printf("%.2f est une annee gregorienne",N);
+        printf("%d est une annee gregorienne",N);
     }
     else
     {
@@ -19,9 +19,10 @@ float annee (float N){
 
 int main()
 {
+    int X;
     printf("entrer l'annee :");
-    scanf("%f",&Y);
-    Y = annee (Y);
+    scanf("%d",&Y);
+    X= annee (Y);
 
 
     return 0;
