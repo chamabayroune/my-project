@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void nombre (int N){
+void nombre (){
       int tab [10]={};
     int i;
     int F=0;
@@ -12,7 +12,6 @@ void nombre (int N){
 
 int main()
 {
-    int F ;
-  nombre(F);
+  nombre();
     return 0;
 }
