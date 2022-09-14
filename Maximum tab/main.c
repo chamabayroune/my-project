@@ -5,19 +5,27 @@
 
 int main()
 {
-    int T[5];
-    int i,max;
+    int T[100];
+    int i,max,j;
+    int taille ;
+    printf("entrez la taille du tableau :");
+    scanf("%d",&taille);
     printf("taper les element du tableau \n");
-    for (i=0; i<=5; i++)
+    for (i=0; i<taille; i++)
     {
         printf("T[%d]= ",i);
         scanf("%d",&T[i]);
     }
     max = T[0];
-    for (i=0; i<10; i++)
+    for (i=0; i<taille; i++)
     {
-        if(max < T[i]);
-        max = T[i];
+        for(j=1 ; j<taille ; j++){
+
+        if(max < T[i+1]);
+        max = T[j];
+        T[i] = max ;
+        max = T[j];
+        }
     }
     printf(" le maximum est : %d",max);
 
